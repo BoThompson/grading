@@ -140,8 +140,9 @@ void Gradesheet()
 		percent /= total;
 		student<<"\n\nFinal Grade: "<<(percent*100)<<"%\n";
 		gradebook<<hw.students[i].firstname<<" "<<hw.students[i].lastname<<" "<<(percent*100)<<endl;
+		student.close();
 	}
-	student.close();
+	
 	gradebook.close();
 }
 
